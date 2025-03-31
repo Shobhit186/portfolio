@@ -1,3 +1,4 @@
+'use client';
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
@@ -32,6 +33,7 @@ export default function Home() {
                 variant="outline"
                 className="uppercase flex items-center gap-2 hover:text-white/80"
                 size="lg"
+                onClick={() => window.open("/api/download", "_blank")}
               >
                 Download CV <FiDownload className="text-xl" />
               </Button>
