@@ -7,7 +7,7 @@ import {BsGithub,BsArrowUpRight} from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Image from "next/image";
 import Link from "next/link";
-import { Description } from "@radix-ui/react-dialog";
+import SliderBtns from "@/components/SliderBtns";
 
 const projects = [
   {
@@ -96,6 +96,7 @@ const Work = () => {
                   </div>
                 </SwiperSlide>
               })}
+              <SliderBtns containerStyles="flex gap-2 absolute xl:right-8 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-black text-[22px] w-[44px] h-[44px] flex justify-center items-center rounded-full transition-all" />
             </Swiper>
           </div>
         </div>
